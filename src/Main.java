@@ -194,19 +194,19 @@ public class Main {
   // What is the time complexity of your new solution?
   // YOUR ANSWER HERE
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
-   
+    //HashSet for faster read
     HashSet<String> wordListSet = new HashSet<>(wordList);
 
-
+    //For every word in wordSet
     for( String word : wordSet) { 
 
-     
+      //Check if the word exists in wordList
       if(wordListSet.contains(word)) {
-
+        //Return true if word exists in WordList
         return true;
       }
     }
-   
+   // return false if none are found
     return false;
   }
 

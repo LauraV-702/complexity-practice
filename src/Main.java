@@ -71,6 +71,7 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  //O(n^2)
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
         int result = computeFactorial(num);
@@ -80,7 +81,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");

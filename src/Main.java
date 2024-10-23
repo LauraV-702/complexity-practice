@@ -93,7 +93,7 @@ public class Main {
 
   // assume n = wordsA.length = wordsB.length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n^2)
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
         for(String wordB : wordsB) {
@@ -106,7 +106,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n^2)
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
@@ -123,13 +123,14 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
       char character = chars[i];
       System.out.println("The character at index " + i + " is " + character);
     }
   }
+
   // The time complexity is:
   // YOUR ANSWER HERE
   public static double computeAverage(double a, double b) {

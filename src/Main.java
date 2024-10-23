@@ -138,7 +138,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(1)
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
     if (set.contains(target)) {

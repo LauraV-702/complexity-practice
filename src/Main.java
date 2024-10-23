@@ -41,7 +41,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static int computeProduct(int[] nums) {
     int total = 1;
     for(int num : nums) {
@@ -51,7 +51,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
@@ -60,7 +60,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {

@@ -179,7 +179,7 @@ public class Main {
 
   // What is the time complexity of this method?
   // (assume the set and list have the same number of elements)
-  // YOUR ANSWER HERE
+  // O(n)
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
@@ -188,11 +188,25 @@ public class Main {
     }
     return false;
   }
+
   // Rewrite hasCommon so it does the same thing as hasCommon, but with a better time complexity.
   // Do not change the datatype of wordSet or wordList.
   // What is the time complexity of your new solution?
   // YOUR ANSWER HERE
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
+   
+    HashSet<String> wordListSet = new HashSet<>(wordList);
+
+
+    for( String word : wordSet) { 
+
+     
+      if(wordListSet.contains(word)) {
+
+        return true;
+      }
+    }
+   
     return false;
   }
 
